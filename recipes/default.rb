@@ -35,7 +35,7 @@ else
 end
 
 remote_file "#{Chef::Config[:file_cache_path]}/thrift-#{version}.tar.gz" do
-  source "#{node['thrift']['mirror']}/thrift/#{version}/thrift-#{version}.tar.gz"
+  source "#{node['thrift']['mirror']}/dist/thrift/#{version}/thrift-#{version}.tar.gz"
   checksum node['thrift']['checksum']
 end
 
